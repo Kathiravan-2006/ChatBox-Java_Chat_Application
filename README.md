@@ -1,34 +1,38 @@
-ChatBox – Java Chat Application
-Project Overview
+💬 Chat Application (Java Sockets)
 
-   ChatBox is a simple client-server chat application built using Java Sockets and Multithreading. It allows multiple clients to connect to a server and chat with each other in real time. The project demonstrates Object-Oriented Programming (OOP) principles, networking, and concurrency in Java.
+Author: Your Name
+Tech Stack: Java, Socket Programming, OOP
 
-Problem Statement
+📖 About
 
-   In small groups (students, office teams, or local networks), communication is often limited to third-party apps. ChatBox solves this by providing a lightweight chat solution that runs directly in Java without internet dependency, ideal for LAN communication and learning Java networking.
+A real-time chat application built using Java sockets that allows multiple users to communicate with each other through a client-server model. This project demonstrates networking in Java, object-oriented principles, and modular code design.
 
-Target Users
+👥 Who It’s For
 
-   Students practicing Java networking concepts
+Students learning Java Networking
 
-   Small teams working on local projects
+Beginners exploring client-server architecture
 
-   Beginners who want to understand multithreading and sockets
+Developers who want to understand multithreading in Java
 
-Features
+Anyone looking for a simple messaging app in Java
 
-   Multi-client real-time communication
-   Server handles multiple clients with multithreading
-   Encapsulation of user/message handling
-   Simple command-line interface (CLI) (future-ready for Swing/JavaFX GUI)
-   Clean modular code with comments
+⚙️ How It Works
 
-Tech Stack
+Server – Listens for incoming client connections and manages broadcasting messages.
 
-   Language: Java
+Client – Connects to the server and enables users to send/receive messages.
 
-   Concepts: OOP (Inheritance, Polymorphism, Encapsulation), Multithreading, Sockets
+Multi-threading – Each client runs in a separate thread, ensuring real-time communication.
 
-   Optional GUI: JavaFX / Swing
+OOP Concepts – Uses Encapsulation, Inheritance, and Polymorphism to design the system.
 
-Version Control: Git & GitHub
+📂 Features
+
+🔌 Real-time text messaging
+
+👥 Supports multiple clients simultaneously
+
+🔒 Handles clean client disconnections
+
+💻 Simple and lightweight Java console interface
