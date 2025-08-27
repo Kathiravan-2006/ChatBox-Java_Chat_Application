@@ -10,13 +10,20 @@ A real-time chat application built using Java sockets that allows multiple users
 
 # Who It’s For
 
-Students learning Java Networking
+## Target Users
 
-Beginners exploring client-server architecture
+### Students & Classrooms
+- Useful for group discussions or study groups.  
+- Example: A teacher runs the server, students connect as clients and chat.  
 
-Developers who want to understand multithreading in Java
+### Small Teams / Offices
+- For quick communication without needing big apps like WhatsApp or Slack.  
+- Lightweight and private within a LAN (local network).  
 
-Anyone looking for a simple messaging app in Java
+### Developers / Learners
+- Helps in understanding networking, sockets, and OOP in Java.  
+- This project acts as a foundation for building larger messaging systems.  
+
 
 # How It Works
 
