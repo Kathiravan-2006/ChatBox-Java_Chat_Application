@@ -1,13 +1,13 @@
-💬 Chat Application (Java Sockets)
+# Chat Application (Java Sockets)
 
-Author: Your Name
+Author: Kathiravan S P
 Tech Stack: Java, Socket Programming, OOP
 
-📖 About
+# About
 
 A real-time chat application built using Java sockets that allows multiple users to communicate with each other through a client-server model. This project demonstrates networking in Java, object-oriented principles, and modular code design.
 
-👥 Who It’s For
+# Who It’s For
 
 Students learning Java Networking
 
@@ -17,7 +17,7 @@ Developers who want to understand multithreading in Java
 
 Anyone looking for a simple messaging app in Java
 
-⚙️ How It Works
+# How It Works
 
 Server – Listens for incoming client connections and manages broadcasting messages.
 
@@ -27,12 +27,32 @@ Multi-threading – Each client runs in a separate thread, ensuring real-time co
 
 OOP Concepts – Uses Encapsulation, Inheritance, and Polymorphism to design the system.
 
-📂 Features
+# Features
 
-🔌 Real-time text messaging
+Real-time text messaging
 
-👥 Supports multiple clients simultaneously
+Supports multiple clients simultaneously
 
-🔒 Handles clean client disconnections
+Handles clean client disconnections
 
-💻 Simple and lightweight Java console interface
+# Simple and lightweight Java console interface
+
++-----------------+          +------------------+
+|     Server      |<>------->|     Client       |
++-----------------+          +------------------+
+| +startServer()  |          | +connectServer() |
+| +broadcast()    |          | +sendMessage()   |
+| -clientList[]   |          | +receiveMessage()|
++-----------------+          +------------------+
+
+         ^
+         |
++-----------------+
+|   ClientThread  |
++-----------------+
+| +run()          |
+| -socket         |
+| -inputStream    |
+| -outputStream   |
++-----------------+
+
