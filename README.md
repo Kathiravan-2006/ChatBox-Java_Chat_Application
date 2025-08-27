@@ -1,6 +1,7 @@
 # Chat Application (Java Sockets)
 
 Author: Kathiravan S P
+
 Tech Stack: Java, Socket Programming, OOP
 
 # About
