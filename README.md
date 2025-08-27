@@ -35,7 +35,7 @@ Supports multiple clients simultaneously
 
 Handles clean client disconnections
 
-# UML Diagram
+## UML Diagram
 
 +-----------------+ +------------------+
 | Server |<>------->| Client |
@@ -45,8 +45,11 @@ Handles clean client disconnections
 | -clientList[] | | +receiveMessage()|
 +-----------------+ +------------------+
 
-         ^
-         |
+markdown
+Copy
+Edit
+     ^
+     |
 +-----------------+
 | ClientThread |
 +-----------------+
@@ -55,4 +58,3 @@ Handles clean client disconnections
 | -inputStream |
 | -outputStream |
 +-----------------+
-
