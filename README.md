@@ -35,24 +35,24 @@ Supports multiple clients simultaneously
 
 Handles clean client disconnections
 
-# Simple and lightweight Java console interface
+# UML Diagram
 
-+-----------------+          +------------------+
-|     Server      |<>------->|     Client       |
-+-----------------+          +------------------+
-| +startServer()  |          | +connectServer() |
-| +broadcast()    |          | +sendMessage()   |
-| -clientList[]   |          | +receiveMessage()|
-+-----------------+          +------------------+
++-----------------+ +------------------+
+| Server |<>------->| Client |
++-----------------+ +------------------+
+| +startServer() | | +connectServer() |
+| +broadcast() | | +sendMessage() |
+| -clientList[] | | +receiveMessage()|
++-----------------+ +------------------+
 
          ^
          |
 +-----------------+
-|   ClientThread  |
+| ClientThread |
 +-----------------+
-| +run()          |
-| -socket         |
-| -inputStream    |
-| -outputStream   |
+| +run() |
+| -socket |
+| -inputStream |
+| -outputStream |
 +-----------------+
 
