@@ -37,24 +37,27 @@ Handles clean client disconnections
 
 ## UML Diagram
 
-+-----------------+ +------------------+
-| Server |<>------->| Client |
-+-----------------+ +------------------+
-| +startServer() | | +connectServer() |
-| +broadcast() | | +sendMessage() |
-| -clientList[] | | +receiveMessage()|
-+-----------------+ +------------------+
+```mermaid
+classDiagram
+    class Server {
+      +startServer()
+      +broadcast()
+      -clientList[]
+    }
 
-markdown
-Copy
-Edit
-     ^
-     |
-+-----------------+
-| ClientThread |
-+-----------------+
-| +run() |
-| -socket |
-| -inputStream |
-| -outputStream |
-+-----------------+
+    class Client {
+      +connectServer()
+      +sendMessage()
+      +receiveMessage()
+    }
+
+    class ClientThread {
+      +run()
+      -socket
+      -inputStream
+      -outputStream
+    }
+
+    Server "1" o-- "*" Client
+    Server "1" --> "*" ClientThread
+
