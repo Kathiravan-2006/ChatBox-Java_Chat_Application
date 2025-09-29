@@ -58,25 +58,25 @@
 
 ```mermaid
 classDiagram
-    class Server {
-      +startServer()
-      +broadcast()
-      -clientList[]
+    class ChatServer {
+        - ServerSocket ss
+        - Socket s
+        - DataInputStream dis
+        - DataOutputStream dout
+        + chat_server()
+        + msg_sendActionPerformed(evt)
+        + main(args)
     }
 
-    class Client {
-      +connectServer()
-      +sendMessage()
-      +receiveMessage()
+    class ChatClient {
+        - Socket s
+        - DataInputStream dis
+        - DataOutputStream dout
+        + chat_client()
+        + msg_sendActionPerformed(evt)
+        + main(args)
     }
 
-    class ClientThread {
-      +run()
-      -socket
-      -inputStream
-      -outputStream
-    }
+    ChatClient --> ChatServer : connects to
 
-    Server "1" o-- "*" Client
-    Server "1" --> "*" ClientThread
 ```  
